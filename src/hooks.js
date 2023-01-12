@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
-export const useFetch = (url, initialValue) => {
+export const useFetch = (url = "", initialValue) => {
+
     const [result, setResult] = useState(initialValue)
 
     useEffect(() => {
